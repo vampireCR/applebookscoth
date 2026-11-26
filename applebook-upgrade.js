@@ -45,8 +45,7 @@
   function ensureShell(){
     const head = $('#hi'), side = $('#sd'), main = $('#mn');
     if (!head || !main) return;
-    brand.innerHTML='<img src="./assets/applebook-avatar-3d.png" alt="" style="width:28px!important;height:28px!important;max-width:28px!const brand=$('#lg'); if(brand && !brand.dataset.abxBrand){brand.dataset.abxBrand='1';brand.innerHTML='<img src="./assets/applebook-avatar-3d.png" alt="" style="width:28px!important;height:28px!important;max-width:28px!important;max-height:28px!important;object-fit:contain;border-radius:7px;flex:none;vertical-align:middle"/><span>apple<span style="font-weight:400;opacity:.88">book</span></span>';brand.setAttribute('aria-label','Apple Book');}
-    if (!$('#abx-menu-button')) {
+    const brand=$('#lg'); if(brand && !brand.dataset.abxBrand){brand.dataset.abxBrand='1';brand.innerHTML='<img src="./assets/applebook-avatar-3d.png" alt="" style="width:28px!important;height:28px!important;max-width:28px!important;max-height:28px!important;object-fit:contain;border-radius:7px;flex:none;vertical-align:middle"/><span>apple<span style="font-weight:400;opacity:.88">book</span></span>';brand.setAttribute('aria-label','Apple Book');}
       const b=document.createElement('button'); b.id='abx-menu-button'; b.type='button'; b.setAttribute('aria-label','Открыть меню'); b.innerHTML=icon('menu'); b.addEventListener('click',toggleMenu); head.insertBefore(b,head.firstChild);
     }
     if (!$('#abx-menu-overlay')) {
